@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #00d999;
+
+}
+
+body .setting {
+
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+
+}
+
+body .setting input[type=button] {
+
+    background: #00d999;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+body .setting input[type=button]:hover {
+
+    background: #058a62;
+
+}
+
+body .setting .wrapper {
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+body .setting .wrapper input:not(input[type=button]) {
+
+    padding-inline: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    max-width: 50px;
+    -webkit-appearance: none;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+body .setting .wrapper input::-webkit-outer-spin-button,
+body .setting .wrapper  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.container {
+
+    width: 700px;
+    max-width: 700px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-inline: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.container .wrapper {
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    padding-top: 10px;
+
+}
+
+.container .wrapper .details {
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.container .wrapper .details .col {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    column-gap: 3px;
+    padding: 0 10px;
+    border-right: 2px solid #ccc;
+
+}
+
+.container .wrapper .details .col span {
+
+    font-weight: 600;
+
+}
+
+.container .wrapper .details .col:last-child {
+
+    border: none;
+
+}
+
+.container .wrapper .details .btn {
+
+    background: #00d999;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+}
+
+.container .wrapper .details .btn:hover {
+
+    background: #03ac79;
+
+}
+
+.container .wrapper .text {
+
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.container .wrapper .input input {
+
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 3px;
+    height: 40px;
+    background: white;
+    font-size: 15px;
+    border: 1px solid #ccc;
+
+}
+
+.container .text span {
+
+    border-radius: 3px;
+
+}
+
+.container .text span.correct {
+
+    color: #00d999;
+
+}
+
+.container .text span.incorrect {
+
+    color: crimson;
+    text-decoration: crimson underline;
+
+}
+
+.container .text span.active {
+
+    text-decoration: underline;
+
+}

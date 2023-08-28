@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="setting">
+        <div class="wrapper">
+            <label for="customize-time">Set time (in seconds) : </label>
+            <input type="number" value="60" max="120">
+            <input type="button" value="set time" class="setTime">
+        </div> 
+    </div>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+
+            <div class="details">
+                <div class="time col">
+                    Time Left : <span>60</span>s
+                </div>
+                <div class="accuracy col">
+                    Accuracy : <span>0</span>%
+                </div>
+                <div class="speed col">
+                    WPM : <span>0</span>
+                </div>
+                <div class="mistakes col">
+                    Mistakes : <span>0</span>
+                </div>
+                <div class="try-again col">
+                    <button class="btn">Try Again</button>
+                </div>
+            </div>
+            <div class="text"> </div>
+            <div class="input">
+                <input type="text" placeholder="Start typing here...">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
